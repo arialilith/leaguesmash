@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>League Smash</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./leaguesmash.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <section class="flex-container">
+            <div class="main">
+                <h1>League Smash</h1>
+                <div class="cards">
+                    <img id="current-card" src="../League Champs/aatrox.webp" alt="Card Image">
+                </div>
+                <div class="tracker">
+    
+                </div>
+                <div class="buttons">
+                    <button type="button" class="smash">Smash</button>
+                    <button type="button" class="pass">Pass</button>
+                </div>
+            </div>
+        </section>
+        <div class="results-container">
+            <div class="results">
+                <button type="button" class="view-results">View Results</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="results-popup" class="results-popup">
+        <div class="results-content">
+            <span class="close">&times;</span>
+            <div class="results-split">
+                <h2>Smash</h2>
+                <div class="results-column" id="smash-results">
+                </div>
+                <h2>Pass</h2>
+                <div class="results-column" id="pass-results">
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="main.js"></script>
+  </body>
+</html>
