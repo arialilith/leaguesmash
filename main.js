@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleAnswer(answer) {
         if (currentIndex >= images.length) {
-            return; // Stop if all images are processed
+            return;
         }
 
         answers.push({ image: images[currentIndex], answer: answer });
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < images.length) {
             currentCard.src = images[currentIndex];
         } else {
-            currentCard.src = 'https://via.placeholder.com/300/000000?text=End'; // End of cards
+            currentCard.src = './end.png';    
         }
 
         updateTracker();
