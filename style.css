@@ -77,15 +77,13 @@ button {
     transition: background-color 0.3s;
     font-size: 30px;
     border-radius: 10px;
+    width: 200px;
+    height: 90px;
 }
 
 button:hover {
-    background-color: var(--primary);
-}
-
-.buttons button{
-    width: 200px;
-    height: 100px;
+    background-color: var(--highlight);
+    transform: scale(1.1);
 }
 
 .results-container {
